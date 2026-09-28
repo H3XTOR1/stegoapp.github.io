@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StegoApp</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      
+      /* Arka plan resmi ve orta ölçek boyutlandırma */
+      background-color: #080c14;
+      background-image: url('C:\\Users\\Emre\\Pictures\\h3xtor-removebg-preview.png');
+      background-size: 900px auto; /* Tam kıvamında orta boyut */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      
+      min-height: 100vh;
+      
+      /* Sayfa içeriğini tam ortalamak için Flexbox */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      /* Kopyalama ve seçim engelleri */
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* ORTADAKİ ŞEFFAF DÖRTGEN KUTU */
+    .info-box {
+      width: 85%;
+      max-width: 550px;
+      padding: 30px;
+      
+      background: rgba(0, 0, 0, 0.70); 
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      
+      color: #ffffff;
+      text-align: center;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+    }
+
+    .info-box h2 {
+      margin-top: 0;
+      font-family: sans-serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 12px;
+      color: #ff3333;
+    }
+
+    .info-box p {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* İndirme ve GitHub Butonları */
+    .btn-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 14px;
+      transition: background 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #ff3333;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: #cc0000;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #cccccc;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    /* H3XTOR İMZASI */
+    .info-box .signature {
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #ff3333;
+      text-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
+      letter-spacing: 1px;
+    }
+
+    /* UYARI GIF VE METİN PENCERESİ (OVERLAY) */
+    #gif-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.95);
+      z-index: 999999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #gif-overlay img {
+      max-width: 80%;
+      max-height: 55vh;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* GIF ALTI UYARI YAZISI */
+    #gif-overlay .warning-text {
+      color: #ffffff !important;
+      font-family: sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 25px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+      display: block;
+    }
+
+    img {
+      pointer-events: none;
+      -webkit-user-drag: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- EKRANIN ORTASINDAKİ ŞEFFAF DÖRTGEN KUTU -->
+  <div class="info-box">
+    <h2>StegoApp 1.0</h2>
+    <p>Turk Hack Team Kullanıcılara duyurulur; Görsellerinizin içerisine gizlenmiş mesajları ve verileri açık kaynaklı ve güvenli bir şekilde bulmanıza yarayan steganografi yazılımı stegoApp 1.0 yayındadır!</p>
+    
+    <div class="btn-container">
+      <a href="C:\Users\Emre\Desktop\StegoApp.exe" class="btn btn-primary" download>🚀 .EXE İndir</a>
+      <a href="https://github.com/H3XTOR1/StegoApp.git" target="_blank" class="btn btn-secondary">💻 GitHub</a>
+    </div>
+
+    <p class="signature">- H3XTOR -</p>
+  </div>
+</body>
+</html>
